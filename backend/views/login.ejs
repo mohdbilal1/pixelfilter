@@ -1,0 +1,36 @@
+<%-include('./partials/header.ejs')%>
+<%-include('./partials/navbar.ejs')%>
+<div>
+    <section class="vh-100" style="background-color: #000000;">
+        <div class="container py-3 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card w-75 ps-5" style="border-radius: 1rem; background-color: #000000;">
+                        <div class="card-body p-5 text-center pt-0">
+                            <div class="form-outline mb-1">
+                                <a href="https://mail.google.com/">
+                                    <button class="mb-3 border-0 ps-4 pe-4 pb-1 rounded-1 bg-danger text-white ">Login with google</button>
+                                </a>
+                            </div>
+                            <div class="d-flex">
+                                <hr class="w-100 text-white border-2 border-white" />
+                                <p class="text-white ms-3 me-3 fw-bolder">OR</p>
+                                <hr class="w-100 text-white border-2" />
+                            </div>
+                            <form method="post">
+                                <div class="form-outline mb-4">
+                                    <input type="text" placeholder="Email" class="form-control form-control-md" name="useremail"/>
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <input type="password" placeholder="Password" class="form-control form-control-md" name="userpassword" />
+                                </div>
+                                <button class="btn btn-primary btn-md btn-block ps-3 pe-3" type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<%-include('./partials/footer.ejs')%>
